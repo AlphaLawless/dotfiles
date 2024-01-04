@@ -1,0 +1,20 @@
+[user]
+    email = alpha.vylly12@gmail.com
+    name = AlphaLawless
+    signingkey = 2AAB1A79B36DBB3C
+[core]
+    editor = nvim
+[alias]
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  s = !git status -s
+  c = !git add --all && git commit -m
+  l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+[init]
+    defaultBranch = main
+[gpg]
+    program = gpg
+[commit]
+    gpgsign = true
+	  verbose = true
+[http]
+    proxy = 

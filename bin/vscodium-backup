@@ -1,0 +1,15 @@
+#!/bin/bash
+
+current_directory=$(pwd)
+dotfiles_path=$(echo "$current_directory" | sed 's/\/bin$//')
+vscodium_config="$HOME/.config/VSCodium/User/settings.json"
+
+vscodium_folder="VSCodium"
+vscodium_extensions_backup="extensions_backup"
+vscodium_user_settings="settings.json"
+
+echo "Save Extensions"
+vscodium --list-extensions > $dotfiles_path/$vscodium_folder/$vscodium_extensions_backup
+
+echo "Save User Settings"
+cat $vscodium_config > $dotfiles_path/$vscodium_folder/$vscodium_user_settings

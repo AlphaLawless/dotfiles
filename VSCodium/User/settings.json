@@ -1,0 +1,103 @@
+{
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Editor
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.cursorBlinking": "smooth",
+  "editor.guides.indentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "multiple",
+  // Window
+  "window.restoreWindows": "none",
+  // Fonts
+  "editor.fontFamily": "JetBrains Mono",
+  // Folders
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  // Formate
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Material Theme
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "domain": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe",
+    "providers": "include",
+    "subscribers": "messages",
+    "useCases": "controller",
+    "kafka": "scripts",
+    "mappers": "meta",
+    "_shared": "shared",
+    "eslint-config": "tools",
+    "kube": "kubernetes"
+  },
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.webpack.js": "webpack"
+  },
+  // Terminal Integrted
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "typescript.suggest.autoImports": true,
+  "telemetry.telemetryLevel": "off",
+  "git.openRepositoryInParentFolders": "always",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // Intellisense
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  // Path Intellisense
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "window.zoomLevel": 1
+}
