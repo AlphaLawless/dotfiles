@@ -1,0 +1,96 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-shift-e": "editor::ToggleFocus",
+      "ctrl-shift-g": "git_panel::OpenMenu"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "shift-j": "editor::ContextMenuNext",
+      "shift-k": "editor::ContextMenuPrevious"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "shift-j": "menu::SelectNext",
+      "shift-k": "menu::SelectPrevious",
+      "shift j": "menu::SelectFirst",
+      "shift k": "menu::SelectLast"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      // Select all content in buffer
+      "ctrl-a": "editor::SelectAll",
+      // Editor
+      "ctrl-b": "workspace::ToggleLeftDock",
+
+      // Git Panel
+      "ctrl-shift-g": "git_panel::ToggleFocus",
+
+      // Project Panel
+      "ctrl-shift-e": "project_panel::ToggleFocus",
+
+      // duplicate line
+      "y y p": "editor::DuplicateLineDown",
+      "y y shift-p": "editor::DuplicateLineUp",
+
+      // move line
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+
+      // better buffer navigation
+      "g t": "pane::ActivateNextItem",
+      "g shift-t": "pane::ActivatePreviousItem",
+      "] b": "pane::ActivateNextItem",
+      "[ b": "pane::ActivatePreviousItem",
+
+      // split like vim-mode
+      // "ctrl-w v": "pane::SplitRight",
+      // "ctrl-w s": "pane::SplitDown",
+      "ctrl-w q": "pane::CloseActiveItem",
+      "ctrl-w c": "pane::CloseActiveItem",
+      "ctrl-w o": "pane::CloseOtherItems"
+    }
+  },
+  {
+    "context": "VimControl && vim_mode == visual",
+    "bindings": {
+      "y p": "editor::DuplicateSelection",
+      "y shift-p": "editor::DuplicateSelection",
+      ">": "editor::Indent",
+      "<": "editor::Outdent",
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  }
+]

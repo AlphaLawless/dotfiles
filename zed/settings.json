@@ -1,0 +1,54 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"icon_theme": {
+		"dark": "Material Icon Theme",
+		"light": "Zed (Default)",
+		"mode": "system"
+	},
+	"vim_mode": true,
+	"ui_font_family": "JetBrainsMono Nerd Font Mono",
+	"ui_font_weight": 400, // Font weight in standard CSS units from 100 to 900.
+	"ui_font_size": 18,
+	"buffer_font_size": 15,
+	"relative_line_numbers": true,
+	"preferred_line_length": 80,
+	"vim": {
+		"use_system_clipboard": "always"
+	},
+ "terminal": {
+    "font_family": "JetBrainsMono Nerd Font Mono",
+    "font_size": 16,
+    "line_height": "comfortable"
+  },
+	"formatter": {
+		"language_server": {
+			"name": "biome"
+		}
+	},
+	"lsp": {
+		"biome": {
+			"settings": {
+				"require_config_file": true
+			}
+		}
+	},
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"theme": {
+		"mode": "system",
+		"light": "One Dark",
+		"dark": "One Dark"
+	},
+	"buffer_font_features": {
+		"calt": true // Disable or Enable ligatures
+	}
+}
