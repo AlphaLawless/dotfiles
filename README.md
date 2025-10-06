@@ -1,2 +1,7 @@
-# My configurations on Machines
-Unix support only
+# My settings
+
+## Supports
+
+- [x] Linux
+- [ ] Windows
+- [ ] MacOS

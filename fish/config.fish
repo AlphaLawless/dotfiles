@@ -31,16 +31,6 @@ set -gx PATH node_modules/.bin $PATH
 set -g GOPATH $HOME/go
 set -gx PATH $GOPATH/bin $PATH
 
-# NVM
-function __check_rvm --on-variable PWD --description 'Do nvm stuff'
-  status --is-command-substitution; and return
-
-  if test -f .nvmrc; and test -r .nvmrc;
-    nvm use
-  else
-  end
-end
-
 switch (uname)
   case Darwin
     source (dirname (status --current-filename))/config-osx.fish
@@ -55,28 +45,5 @@ if test -f $LOCAL_CONFIG
   source $LOCAL_CONFIG
 end
 
-# pnpm
-set -gx PNPM_HOME "/home/alpha/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
-
-# cargo in pure rust
-set -gx PNPM_HOME "/home/alpha/.cargo/bin"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-
-# cargo in rustup
-set -gx PNPM_HOME "/home/alpha/.cargo/bin/bin"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-
-set -gx PNPM_HOME "/home/alpha/.cargo/bin/bin/bin"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-
-# cargo end
+# Mise
+$HOME/.local/bin/mise activate fish | source
